@@ -1,4 +1,4 @@
-let astro = {
+var astro = {
   get: function(name) {
     return astro_util[name]
   }
