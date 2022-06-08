@@ -17,5 +17,10 @@ const astro_util = {
         }
       }
     }
+  },
+  debug: {
+    log: function(text:string) {
+      console.log(text);
+    }
   }
 }
