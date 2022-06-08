@@ -1,12 +1,12 @@
 let astro = {
-  get: function(name:string) {
+  get: function(name) {
     return astro_util[name]
   }
 }
 
 const astro_util = {
   task: {
-    wait(time:number, callback?:Function) {
+    wait(time, callback) {
       var start = new Date().getTime();
       for (var i = 0; i < 1e7; i++) {
         if ((new Date().getTime() - start) > time){
@@ -19,7 +19,7 @@ const astro_util = {
     }
   },
   debug: {
-    log: function(text:string) {
+    log: function(text) {
       console.log(text);
     }
   }
